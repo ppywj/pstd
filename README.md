@@ -12,6 +12,8 @@ csv:https://github.com/p-ranav/csv2
 
 json:https://github.com/nlohmann/json
 
+ini:https://github.com/metayeti/mINI
+
 sort:https://github.com/orlp/pdqsort
 
 arg parse:https://github.com/adishavit/argh

@@ -13,6 +13,8 @@ csv:https://github.com/p-ranav/csv2
 
 json:https://github.com/nlohmann/json
 
+ini:https://github.com/metayeti/mINI
+
 ≈≈–Ú£∫https://github.com/orlp/pdqsort
 
 argΩ‚Œˆ£∫https://github.com/adishavit/argh
