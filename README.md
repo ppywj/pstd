@@ -10,6 +10,8 @@ xml:https://github.com/leethomason/tinyxml2
 
 csv:https://github.com/p-ranav/csv2
 
+json:https://github.com/nlohmann/json
+
 sort:https://github.com/orlp/pdqsort
 
 arg parse:https://github.com/adishavit/argh

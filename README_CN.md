@@ -9,7 +9,9 @@
 
 xml:https://github.com/leethomason/tinyxml2
 
-csv£∫https://github.com/p-ranav/csv2
+csv:https://github.com/p-ranav/csv2
+
+json:https://github.com/nlohmann/json
 
 ≈≈–Ú£∫https://github.com/orlp/pdqsort
 
