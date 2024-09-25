@@ -16,6 +16,8 @@ ini:https://github.com/metayeti/mINI
 
 http/https:https://github.com/yhirose/cpp-httplib
 
+log:https://github.com/gabime/spdlog
+
 sort:https://github.com/orlp/pdqsort
 
 arg parse:https://github.com/adishavit/argh

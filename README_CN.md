@@ -15,6 +15,10 @@ json:https://github.com/nlohmann/json
 
 ini:https://github.com/metayeti/mINI
 
+http/https:https://github.com/yhirose/cpp-httplib
+
+log:https://github.com/gabime/spdlog
+
 ≈≈–Ú£∫https://github.com/orlp/pdqsort
 
 argΩ‚Œˆ£∫https://github.com/adishavit/argh
