@@ -14,6 +14,8 @@ json:https://github.com/nlohmann/json
 
 ini:https://github.com/metayeti/mINI
 
+http/https:https://github.com/yhirose/cpp-httplib
+
 sort:https://github.com/orlp/pdqsort
 
 arg parse:https://github.com/adishavit/argh

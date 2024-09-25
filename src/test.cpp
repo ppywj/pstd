@@ -96,27 +96,56 @@ Parameters:
 //
 //}
 
-#include"xml.h"
-//xml解析测试
-int main()
-{
-	xml::XMLDocument doc;
-	doc.LoadFile("dream.xml");
+//#include"xml.h"
+////xml解析测试
+//int main()
+//{
+//	xml::XMLDocument doc;
+//	doc.LoadFile("dream.xml");
+//
+//	// Structure of the XML file:
+//	// - Element "PLAY"      the root Element, which is the
+//	//                       FirstChildElement of the Document
+//	// - - Element "TITLE"   child of the root PLAY Element
+//	// - - - Text            child of the TITLE Element
+//
+//	// Navigate to the title, using the convenience function,
+//	// with a dangerous lack of error checking.
+//	const char* title = doc.FirstChildElement("PLAY")->FirstChildElement("TITLE")->GetText();
+//	printf("Name of play (1): %s\n", title);
+//
+//	// Text is just another Node to TinyXML-2. The more
+//	// general way to get to the XMLText:
+//	xml::XMLText * textNode = doc.FirstChildElement("PLAY")->FirstChildElement("TITLE")->FirstChild()->ToText();
+//	title = textNode->Value();
+//	printf("Name of play (2): %s\n", title);
+//}
+#define CPPHTTPLIB_OPENSSL_SUPPORT
+#include"http.h"
+//http测试
+int main() {
 
-	// Structure of the XML file:
-	// - Element "PLAY"      the root Element, which is the
-	//                       FirstChildElement of the Document
-	// - - Element "TITLE"   child of the root PLAY Element
-	// - - - Text            child of the TITLE Element
+    //打开ssl支持需要声明宏:#define CPPHTTPLIB_OPENSSL_SUPPORT并链接libssl and libcrypto
+    // HTTP server
+    /**
+    http::Server svr;
 
-	// Navigate to the title, using the convenience function,
-	// with a dangerous lack of error checking.
-	const char* title = doc.FirstChildElement("PLAY")->FirstChildElement("TITLE")->GetText();
-	printf("Name of play (1): %s\n", title);
+    svr.Get("/hi", [](const http::Request&, http::Response& res) {
+        res.set_content("Hello World!", "text/plain");
+        });
 
-	// Text is just another Node to TinyXML-2. The more
-	// general way to get to the XMLText:
-	xml::XMLText * textNode = doc.FirstChildElement("PLAY")->FirstChildElement("TITLE")->FirstChild()->ToText();
-	title = textNode->Value();
-	printf("Name of play (2): %s\n", title);
+    svr.listen("0.0.0.0", 8080);
+    */
+
+    //HTTP Client
+    // HTTP
+
+
+    // HTTPS
+    http::Client cli("http://www.baidu.com");
+
+    auto res = cli.Get("/s?tn=15007414_15_dg&ie=utf-8&wd=csdn");
+    res->status;
+    std::cout<<res->body;
+    return 0;
 }
